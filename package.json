@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3008 | npx local-ssl-proxy --key ~/localhost-key.pem --cert ~/localhost.pem  --source 3001 --target 3008",
+    "dev": "vite --port 3001",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -33,6 +33,7 @@
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.7.0",
+    "vite-plugin-mkcert": "latest",
     "vite": "^5.4.9"
   }
 }
