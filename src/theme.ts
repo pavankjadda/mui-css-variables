@@ -1,5 +1,8 @@
 import {createTheme} from '@mui/material/styles';
 
+export function getCssVariable(variable: string): string {
+	return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+}
 
 declare module '@mui/material/styles' {
 	interface BreakpointOverrides {
