@@ -1,9 +1,10 @@
 import './App.css'
-import {CssBaseline, ThemeProvider} from '@mui/material';
-import theme from './theme.ts';
+import {CssBaseline} from '@mui/material';
+import {ThemeProvider} from "@mui/material/styles";
+import theme from './theme.tsx';
 import Home from './Home.tsx';
 
-function App() {
+export default function App() {
   return (
       <ThemeProvider theme={theme}>
           <CssBaseline />
@@ -11,5 +12,3 @@ function App() {
       </ThemeProvider>
   )
 }
-
-export default App

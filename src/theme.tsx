@@ -18,7 +18,7 @@ declare module '@mui/material/styles' {
 
 // A custom theme for this app
 const theme = createTheme({
-	cssVariables: true,
+	cssVariables:true,
 	breakpoints: {
 		values: {
 			xs: 0,
@@ -32,10 +32,18 @@ const theme = createTheme({
 	},
 	palette: {
 		primary: {
-			// Removed getCssVariable('--primary-color') and replaced with a color for testing
-			main: '#153d77'
-		}
-	}
+			main: getCssVariable('--primary-color'),
+		},
+		secondary: {
+			main: getCssVariable('--secondary-color'),
+		},
+		success: {
+			main: getCssVariable('--success-color'),
+		},
+		error: {
+			main: getCssVariable('--error-color'),
+		},
+	},
 });
 
 export default theme;

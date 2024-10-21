@@ -1,8 +1,10 @@
 import {ManageButton} from '@js-smart/react-kit';
-import {Button} from '@mui/material';
+import {Button, useTheme} from '@mui/material';
 import reactLogo from './assets/react.svg'
 
 export default function Home() {
+    const theme = useTheme();
+
     return (
         <div>
             <div>
@@ -15,6 +17,10 @@ export default function Home() {
             <div className="card">
                 <ManageButton onClick={() => console.log('Button clicked')}>Click me</ManageButton>
                 <Button variant="contained" color="primary" sx={{mx: 2}}>Test Button </Button>
+
+                <p>
+                    Primary Color: {theme.palette.primary.main}
+                </p>
             </div>
         </div>
     );
