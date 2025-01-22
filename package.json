@@ -34,6 +34,6 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.7.0",
     "vite-plugin-mkcert": "latest",
-    "vite": "^5.4.9"
+    "vite": "^5.4.14"
   }
 }
